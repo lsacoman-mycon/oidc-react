@@ -213,7 +213,7 @@ export const AuthProvider: FC<PropsWithChildren<AuthProviderProps>> = ({
   const value = useMemo<AuthContextProps>(() => {
     return {
       signIn: async (args?: SigninRedirectArgs): Promise<void> => {
-        // await userManager.signinRedirect(args);
+        await userManager.signinRedirect(args);
       },
       signInPopup: async (): Promise<void> => {
         await signInPopupHooks();
