@@ -295,7 +295,12 @@ var AuthProvider = function (_a) {
         return {
             signIn: function (args) { return __awaiter(void 0, void 0, void 0, function () {
                 return __generator(this, function (_a) {
-                    return [2 /*return*/];
+                    switch (_a.label) {
+                        case 0: return [4 /*yield*/, userManager.signinRedirect(args)];
+                        case 1:
+                            _a.sent();
+                            return [2 /*return*/];
+                    }
                 });
             }); },
             signInPopup: function () { return __awaiter(void 0, void 0, void 0, function () {
